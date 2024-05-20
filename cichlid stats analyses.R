@@ -11,8 +11,7 @@ require(geiger); require(reshape2)
 
 #assuming you set the working directory to the folder with the data files
 
-Mcgee_2020_tree <- read.tree("~/Desktop/cichlid_proj/lab_cichlid/data/Borstein_tree.tre") #read.tree("Mcgee_2020_tree.tre")
-setwd("~/Desktop/cichlid_proj/submission package/CSV files, code/")
+Mcgee_2020_tree <- read.tree("Mcgee_2020_tree.tre")
 
 species_table <- read_csv("classifiers.csv") %>%
   rename(Genus_species = genus_species, tree_name = phylo_species, 
